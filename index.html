@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="bootstrap-3.0.0/assets/ico/favicon.png">
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.0.0/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="bootstrap-3.0.0/assets/js/html5shiv.js"></script>
+      <script src="bootstrap-3.0.0/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/svg.css">
+  </head>
+
+  <body>
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">kplant</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul> 
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+      <!-- Begin page content -->
+      <div class="container">
+
+	<div class="col-lg-6">
+		<div class="input-group">
+			<span id="input-status" class="input-group-addon alert alert-danger">#</span>
+			<textarea id='ruleset' class="form-control" rows="4" placeholder="ruleset" required></textarea>
+		</div>
+	</div>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Settings</h3>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group">					
+						<span id="label-depth" class="input-group-addon">Depth</span>
+						<input id='depth' type="text" class="form-control" placeholder="depth">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="input-group">					
+						<span id="label-depth" class="input-group-addon">Left</span>
+						<input id='depth' type="text" class="form-control" placeholder="angle">
+					</div>
+				</div>
+				</div>
+
+
+				<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group">					
+						<span id="label-depth" class="input-group-addon">Step</span>
+						<input id='depth' type="text" class="form-control" placeholder="length">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="input-group">					
+						<span id="label-depth" class="input-group-addon">Right</span>
+						<input id='depth' type="text" class="form-control" placeholder="angle">
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<button type="button" class="btn btn-default" id="regenerate">Regenerate</button>
+		<div id="chart" style="position:absolute;z-index:0;">
+			<svg></svg>
+		</div>
+		
+      </div>
+    </div>
+
+	<script src="js/d3.v3.min.js"></script>
+	<script src="js/main.js"></script>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap-3.0.0/assets/js/jquery.js"></script>
+    <script src="bootstrap-3.0.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
