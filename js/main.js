@@ -24,12 +24,12 @@ var k_start = 'S';   // axiom symbol
 var k_dla = 0.5;     // left angle delta
 var k_dra = 0.5;     // right angle delta
 var k_dl = 0.8;      // length delta
-var k_l = 10;       // current length
+var k_l = 150;       // current length
 var k_s = {x:420,y:600,a:0,p:k_seed}; // current state (position, angle)
 var k_rules = {};    // set of production k_rules
 var k_stack = [];    // state history
 var k_b = [];        // array of branch data
-var k_maxdepth = 4; // maximum variable depth
+var k_maxdepth = 9; // maximum variable depth
 var k_seed = {x:420,y:600,a:0,p:k_seed,d:0}
 
 function l_parse() {
@@ -112,7 +112,7 @@ function l_init() {
 	k_b = [];
 	k_rules = {};
 	k_stack = [];
-	k_l = 10;
+	k_l = 150;
 }
 
 function l_generate() {
