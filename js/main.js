@@ -39,7 +39,7 @@ function l_parse() {
 	var raw = document.getElementById("ruleset").value;
 	raw = raw.split(' ').join('').split('\n');
 	for(i in raw) {
-		if(raw[i]) {
+		if(raw[i] && raw[i][0] != '#') {
 			if(raw[i].indexOf(':') != -1) {
 				var r = raw[i].split(':');
 				if(r[0]) // the value can be undefined
@@ -108,6 +108,7 @@ function l_evaluate(r, parent, depth) {
 }
 
 function l_init() {
+	k_seed = {x:420,y:600,a:0,p:k_seed,d:0};
 	k_s = {x:420,y:600,a:0,p:k_seed};
 	k_b = [];
 	k_rules = {};
